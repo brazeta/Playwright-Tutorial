@@ -120,3 +120,10 @@ test("Leya Online - Scenario 1", async ({ page }) => {
 
 });
 
+test("Scenario 2 - Leya Online", async({page}) =>{
+  let homePage = new HomePage(page);
+
+  await homePage.navigateToHomePage();
+
+});
+
