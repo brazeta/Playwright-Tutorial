@@ -8,27 +8,7 @@ const { CookiesArea } = require("./pages/CookiesArea");
 const { ResultsPage } = require("./pages/ResultsPage");
 
 
-
-
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-});
-
-
-test("Leya Online - Training Tutorial", async ({ page }) => {
+test("Leya Online - Scenario 1", async ({ page }) => {
 
   let homePage = new HomePage(page);
   let mainMenu = new MainMenu(page);
@@ -61,7 +41,7 @@ test("Leya Online - Training Tutorial", async ({ page }) => {
 
 });
 
-test("Leya Online - Scenario 1", async ({ page }) => {
+test("Leya Online - Scenario 2", async ({ page }) => {
 
   let homePage = new HomePage(page);
   let mainMenu = new MainMenu(page);
@@ -120,7 +100,7 @@ test("Leya Online - Scenario 1", async ({ page }) => {
 
 });
 
-test("Scenario 2 - Leya Online", async({page}) =>{
+test("Leya Online - Scenario 3 ", async({page}) =>{
   let homePage = new HomePage(page);
 
   await homePage.navigateToHomePage();
