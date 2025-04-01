@@ -118,7 +118,5 @@ test("Leya Online - Scenario 1", async ({ page }) => {
 
   await bookPage.verifySinopseContainsText("Quinta Manor"); //updated here also
 
-  //this last comment will be removed
-
 });
 
