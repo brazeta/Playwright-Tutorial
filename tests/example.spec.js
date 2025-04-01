@@ -116,7 +116,9 @@ test("Leya Online - Scenario 1", async ({ page }) => {
 
   await bookPage.verifyAuthorLinkURL(bookAuthor, bookAuthorURL);
 
-  await bookPage.verifySinopseContainsText("Quinta Manor");
+  await bookPage.verifySinopseContainsText("Quinta Manor"); //updated here also
+
+  //this last comment will be removed
 
 });
 
