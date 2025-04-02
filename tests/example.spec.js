@@ -9,7 +9,7 @@ const { ResultsPage } = require("./pages/ResultsPage");
 
 
 test("Leya Online - Scenario 1", async ({ page }) => {
-
+  
   let homePage = new HomePage(page);
   let mainMenu = new MainMenu(page);
   let bookPage = new BookPage(page);
